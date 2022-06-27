@@ -1,0 +1,23 @@
+<div class="container d-flex flex-column" style="padding-top: 150px">
+  <nav>
+    <ul>
+      <li
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Homepage
+      </li>
+      <li
+        [routerLink]="['Users']"
+        [queryParams]="{ details: true }"
+        routerLinkActive="active"
+      >
+        Users
+      </li>
+    </ul>
+  </nav>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

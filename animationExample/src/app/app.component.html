@@ -1,0 +1,19 @@
+<div
+  class="container d-flex flex-column flex-justify-content-center flex-align-items-center"
+  style="padding-top: 100px"
+>
+  <div class="w-100 d-flex flew-row flex-justify-content-center">
+    <ul
+      *ngIf="display"
+      @list
+      (@list.start)="toggle($event)"
+      (@list.done)="toggle($event)"
+    >
+      <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+  </div>
+</div>
